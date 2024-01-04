@@ -7,7 +7,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>My form page</h1>
+    <section class="container">
+      <div class="left-col">
+        <div class="logo-wrapper">
+          <img src="media/odin-lined.png" alt="logo" class="logo" />
+          <h1>ODIN</h1>
+        </div>
+      </div>
+      <div class="right-col">
+        <form action="dsa">
+          <div class="right-col__row1">
+            <p>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+          </div>
+          <div class="right-col__row2">
+            <h2>Let's do this!</h2>
+            <ul>
+              <li>
+                <label for="first_name">First name</label>
+                <input type="text" name="user_first_name" id="first_name" />
+              </li>
+              <li>
+                <label for="last_name">Last name</label>
+                <input type="text" name="user_last_name" id="last_name" />
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" name="user_email" id="email" />
+              </li>
+              <li>
+                <label for="telephone">Phone Number</label>
+                <input type="tel" name="user_phone" id="telephone" />
+              </li>
+              <li>
+                <label for="password1">Password</label>
+                <input type="password" name="user_pass1" id="password1" />
+              </li>
+              <li>
+                <label for="password2">Confirm password</label>
+                <input type="password" name="user_pass2" id="password2" />
+              </li>
+            </ul>
+          </div>
+          <div class="right-col__row3">
+            <button type="submit" class="form-button">Create Account</button>
+            <p>
+              Already have an account? <span><a href="#">Log in</a></span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>
