@@ -45,7 +45,18 @@
               </li>
               <li>
                 <label for="password1">Password</label>
-                <input type="password" name="user_pass1" id="password1" />
+                <!-- (^=\w{4,}) -->
+                <input
+                  title="must be atleast 8 characters"
+                  type="password"
+                  name="user_pass1"
+                  id="password1"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,}$"
+                />
+                <p class="input-hint">
+                  Must be atleast 6 characters, contain atleast 1 number and 1
+                  uppercase character
+                </p>
               </li>
               <li>
                 <label for="password2">Confirm password</label>
