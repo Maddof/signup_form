@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="right-col">
-        <form action="dsa">
+        <form>
           <div class="right-col__row1">
             <p>
               This is not a real online service! You know you need something
@@ -47,7 +47,8 @@
                 <label for="password1">Password</label>
                 <!-- (^=\w{4,}) -->
                 <input
-                  title="must be atleast 8 characters"
+                  title="Must be atleast 6 characters, contain atleast 1 number and 1
+                  uppercase character"
                   type="password"
                   name="user_pass1"
                   id="password1"
@@ -60,7 +61,14 @@
               </li>
               <li>
                 <label for="password2">Confirm password</label>
-                <input type="password" name="user_pass2" id="password2" />
+                <input
+                  title="Must be atleast 6 characters, contain atleast 1 number and 1
+                  uppercase character"
+                  type="password"
+                  name="user_pass2"
+                  id="password2"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,}$"
+                />
               </li>
             </ul>
           </div>
